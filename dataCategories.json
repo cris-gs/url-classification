@@ -1,9 +1,18 @@
 {
-    "totals": {
-        "totalGames": 293,
-        "totalComp": 2884,
-        "totalInvalid": 3823
-    },
+    "totals": [
+        {
+            "name": "totalGames",
+            "value": 293
+        },
+        {
+            "name": "totalComputer",
+            "value": 2884
+        },
+        {
+            "name": "totalInvalid",
+            "value": 3823
+        }
+    ],
     "categories": [
         {
             "id": 1,

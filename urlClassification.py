@@ -79,15 +79,20 @@ def defineCategory(keyword):
 
 
 
-with open("./url-classification/datos.json") as file:
+with open("datos.json") as file:
     data = json.load(file)
     id = 1
     listCategory = []
     for keyword in data['keywords']:
         listCategory.append({'id': id, 'name': defineCategory(keyword)})
         id+=1
-    data2 = ({"totals":{"totalGames": totalGames-1, "totalComp": totalComp-1, "totalInvalid": totalInvalid}, "categories": listCategory})
-    with open('./url-classification/dataCategories.json', 'w') as f:
+    listTotals = [] 
+    listTotals.append({'name': 'totalGames', 'value': totalGames-1})
+    listTotals.append({'name': 'totalComputer', 'value': totalComp-1})
+    listTotals.append({'name': 'totalInvalid', 'value': totalInvalid})
+
+    data2 = ({"totals":listTotals, "categories": listCategory})
+    with open('dataCategories.json', 'w') as f:
         json.dump(data2, f, indent= 4)
 
 
