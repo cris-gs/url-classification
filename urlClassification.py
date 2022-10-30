@@ -48,7 +48,6 @@ def defineCategory(keyword):
     #actuliza el total de páginas de categorizadas para juegos y computadoras
     elif(tempGames != 0 and tempComp != 0):
         category=analyzeCategory(priorProbGames, priorProbComp, tempGames/totalGames, tempComp/totalComp)
-
         if(category=="Games"):
             totalGames += 1
             globals()['totalGames'] = totalGames
@@ -79,13 +78,25 @@ def defineCategory(keyword):
 
 
 
+
+
 with open("datos.json") as file:
     data = json.load(file)
     id = 1
     listCategory = []
-    for keyword in data['keywords']:
-        listCategory.append({'id': id, 'name': defineCategory(keyword)})
+
+    for key in zip(data['keywords'], data['link']):
+        category = defineCategory(key[0])
+        link = key[1]
+        if category == "Games": 
+            keywords = key[0]['games']
+        elif category == "Computers":
+            keywords = key[0]['computers']
+        elif category == "Invalid":
+            keywords = {} 
+        listCategory.append({"id": id, "category": category, "link": link, "keywords": keywords})
         id+=1
+    
     listTotals = [] 
     listTotals.append({'name': 'totalGames', 'value': totalGames-1})
     listTotals.append({'name': 'totalComputer', 'value': totalComp-1})

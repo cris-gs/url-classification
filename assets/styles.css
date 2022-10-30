@@ -31,6 +31,15 @@ body {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
+.table{ 
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+}
+
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -38,4 +47,23 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     margin-top: 32px;
+}
+
+.info { 
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+thead, tbody { display: block; }
+
+tbody {
+    height: 300px;       
+    overflow-y: auto;    
+    overflow-x: hidden; 
 }
