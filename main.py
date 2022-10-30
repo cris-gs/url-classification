@@ -16,6 +16,15 @@ if __name__ == '__main__':
     elapsed_time = time() - start_time
 
     print("Tiempo Paralelo: %0.10f segundos." % elapsed_time)
+
+    """ start_time2 = time()
+
+    for text in data['text']:
+      search_keywords(text)
+
+    elapsed_time2 = time() - start_time2
+
+    print("Tiempo Secuencial: %0.10f segundos." % elapsed_time2) """
   
     with open('datos.json', 'w') as f:
       json.dump(data, f, indent= 4)

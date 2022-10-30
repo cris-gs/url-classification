@@ -86,14 +86,14 @@ This is executed in this sequence of steps so that the interaction time with the
 
 ## Time Comparative
 
-**Web Scraping**
+> ### Web Scraping
 
-Sequential time: 16126.5082452297 seconds.
+- Sequential time: 16126.5082452297 seconds.
 
-Parallel time: 4278.2422530651 seconds.
+- Parallel time: 4278.2422530651 seconds.
 
-**Identify the words of each category by web page**
+> ### Identify the words of each category by web page
 
-Sequential time: 4.5470371246 seconds.
+- Sequential time: 4.5470371246 seconds.
 
-Parallel time: 1.9183907509 seconds.
+- Parallel time: 1.9183907509 seconds.
