@@ -30,9 +30,23 @@ To apply this analysis we must use the 4 main data, which are: total games, tota
 
 > ### Sample data on the web
 <div style="text-align: justify">
-A bar graph is created in which it shows us the amount identified in all the urls of the three categories, in this way the results obtained are shown much more clearly, other than that it is shown on the web being easier to access.
+A bar graph is created in which it shows us the amount identified in all the urls of the three categories, in this way the results obtained are shown much more clearly, other than that it is shown on the web being easier to access. If we click on one of the 3 bars, it will show us the urls corresponding to its category, in addition, if we click on one of the urls, it will show us the list of words with which it was identified for this category.
 </div>
 <br/>
+
+<p align="center">
+<img src="https://github.com/cris-gs/imgs-for-readme/blob/main/Captura%20de%20pantalla%202022-11-02%20141723.png?raw=true" alt="Sample data chat" width="640px" />
+</p>
+
+
+
+<p align="center">
+<img src="https://github.com/cris-gs/imgs-for-readme/blob/main/Captura%20de%20pantalla%202022-11-02%20141821.png?raw=true" alt="Sample data chat" width="640px" />
+</p>
+
+<p align="center">
+<img src="https://github.com/cris-gs/imgs-for-readme/blob/main/Captura%20de%20pantalla%202022-11-02%20141840.png?raw=true" alt="Sample data chat" width="640px" />
+</p>
 
 ## Instalation
 

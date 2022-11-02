@@ -9,7 +9,7 @@ from dash import dash_table
 import ast
 
 # Load data
-with open('dataCategories.json') as file:    
+with open('./url-classification/dataCategories.json') as file:    
     data = json.load(file)  
 df = pd.json_normalize(data)
 
